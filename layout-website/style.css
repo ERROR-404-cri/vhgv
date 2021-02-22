@@ -1,0 +1,108 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: lightgray;
+    font-family: "comic sans ms", cursive, sans-serif;
+    font-size: 15px;
+
+}
+
+.header {
+    background: coral;
+    color: white;
+    text-align: center;
+
+}
+
+.navbar {
+    position: sticky;
+    top: 0;
+    background: black;
+    color: white;
+    padding: 5px;
+}
+
+.navbar ul {
+    list-style: none;
+}
+
+.navbar ul li {
+    display: inline;
+    padding: 15px 10px;
+}
+
+.desp {
+    background: url(./stones-167089_640.jpg);
+}
+
+.desp h1 {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    color: white;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 5rem;
+    padding-top: 20px;
+}
+
+.content {
+    float: left;
+    width: 70%;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.content h1 {
+    margin: 5px 0;
+}
+
+.content p {
+    margin: 5px 0;
+    line-height: 1.5em;
+}
+
+.sidebar {
+    padding: 5px;
+    float: right;
+    width: 30%;
+    background: black;
+    color: white;
+    box-sizing: border-box;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.clear {
+    clear: both;
+}
+
+.footer {
+    clear: both;
+    text-align: center;
+    background: grey;
+    color: white;
+    position: sticky;
+    bottom: 0;
+    height: 40px;
+    padding: 10px 10px 0px 10px;
+    width: 100%;
+}
+
+@media(max-width:668px) {
+    .content {
+        float: none;
+        width: 100%;
+    }
+
+    .sidebar {
+        float: none;
+        width: 100%;
+    }
+}

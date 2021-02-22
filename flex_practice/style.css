@@ -1,0 +1,64 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.parent {
+    height: 100vh;
+    border: 10px solid rgb(0, 0, 0);
+    display: flex;
+    /* align-content: flex-start; */
+    /*for wrapping content adjacent to eachother*/
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    /*flex-wrap for wraping content down if it width become less than the content width*/
+    /* flex-direction: column; */
+    /* justify-content: space-evenly; */
+    /* if flex-direction is row, it do coloumwise align*/
+    /* if flex-direction is vertical, it do rowwise align*/
+    /* align-items: flex-start; */
+    /*if flex-direction is row, it do rowwise align*/
+    /* if flex-direction is vertical, it do coloumnwise align*/
+
+}
+
+.child1 {
+    width: 200px;
+    height: 100px;
+    background: rgb(39, 61, 134);
+    flex-grow: 1;
+    /*take up empty space*/
+    /* flex-shrink: 2; */
+    /* flex-basis: 100px; */
+    /*can use this ,instead of width*/
+    /* flex: 1 0 100px; */
+    /* flex: flex-grow flex-shrink flex-basis*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: flex-end;
+
+}
+
+.child2 {
+    width: 200px;
+    height: 100px;
+    background: rgb(172, 57, 53);
+    /* flex-grow: 1; */
+}
+
+.child3 {
+    width: 200px;
+    height: 100px;
+    background: rgb(149, 43, 140);
+    /* flex-grow: 1; */
+    align-self: center;
+}
+
+.child4 {
+    width: 200px;
+    height: 100px;
+    background: green;
+    /* flex-grow: 1; */
+}

@@ -1,0 +1,215 @@
+/* box-sizing
+   em.pm.vw
+   ::after
+   div,div+p.y cheatsheet
+   min-height
+   flexbox
+
+*/
+
+body {
+    padding: 0;
+    margin: 0;
+    /* background-color: aquamarine; */
+}
+
+h1 {
+    color: cadetblue;
+    word-spacing: 1em;
+    letter-spacing: .2em;
+    text-decoration: black underline;
+    text-transform: capitalize;
+    font-style: italic;
+
+}
+
+p {
+    font-family: "comic sans ms", cursive, sans-serif;
+    line-height: 2em;
+}
+
+.box-1 {
+    color: chocolate;
+    background-color: lightcyan;
+    border: 5px red solid;
+    padding: 15px;
+    margin: 15px 0;
+    height: 200px;
+    overflow-y: scroll;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    color: white;
+    /* width: 10px;
+    background-color: tan; */
+}
+
+::-webkit-scrollbar-thumb {
+    background: lightpink;
+    border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: lightgray;
+}
+
+.container {
+    width: 80%;
+    /* align-items: center;
+    justify-content: center; */
+    margin: auto;
+}
+
+.list {
+    border: 2px #ccc dotted;
+    border-radius: 1em;
+    padding: 15px;
+    margin: 15px 0;
+}
+
+.list h2 {
+    text-align: center;
+}
+
+.list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.list ul a {
+    text-decoration: none;
+    line-height: 1.5em;
+    cursor: pointer;
+    color: lightcoral;
+}
+
+.list ul a:hover {
+    color: darkgray;
+}
+
+.form {
+    padding: 15px;
+    border: 2px lightgrey dotted;
+    border-radius: 15px;
+}
+
+.submit button {
+    color: lightcoral;
+    background: white;
+    outline: none;
+    /* align-self: center; */
+    border: 1px lightsalmon solid;
+    border-radius: 20px;
+    width: 20%;
+    margin-left: 40%;
+}
+
+.form-group {
+    margin: 15px;
+}
+
+.form-group input {
+    border: 1px grey solid;
+    border-radius: 10px;
+    height: 20px;
+    color: lightcoral;
+    outline: none;
+    text-transform: uppercase;
+    margin-left: 10px;
+    width: 100%;
+}
+
+.submit button:hover {
+    background-color: lightgreen;
+    color: black;
+    border: 1px white solid;
+}
+
+.form-group label {
+    display: block;
+    color: lightsalmon;
+    text-transform: capitalize;
+    margin: 10px 10px;
+}
+
+.block {
+    text-align: center;
+    float: left;
+    width: 33.33%;
+    border: 1px lightslategray solid;
+    /* margin: 2px; */
+    padding: 10px;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.super-block {
+    background-color: red;
+}
+
+.clear {
+    clear: both;
+}
+
+.main-block {
+    text-align: center;
+    float: left;
+    width: 70%;
+    border: 1px black solid;
+    box-sizing: border-box;
+    padding: 5px;
+}
+
+.sidebar {
+    text-align: center;
+    float: right;
+    width: 30%;
+    border: 1px black solid;
+    box-sizing: border-box;
+    padding: 5px;
+}
+
+.p-box {
+    border: 2px red solid;
+    width: 100%;
+    height: 300px;
+    background-image: url(./light-bulb-5831252_1920.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 300px;
+}
+
+.p-box h1 {
+    position: fixed;
+    top: 0px;
+    padding: 0;
+    margin: 0;
+    right: 85%;
+    color: white;
+    text-decoration: none;
+    background: black;
+    font-size: 20px;
+
+}
+
+.my-list li:first-child {
+    background: yellow;
+}
+
+.my-list li:nth-child(5) {
+    background: green;
+}
+
+.my-list li:nth-child(odd) {
+    background: grey;
+}
+
+.my-list::before {
+    content: "-->";
+    color: red;
+    background: black;
+    opacity: 0;
+}
